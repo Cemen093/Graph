@@ -6,7 +6,6 @@ public class Vertex {
 
     public Vertex(char label) {
         this.label = label;
-        this.isVisited = isVisited;
     }
 
     public char getLabel() {
