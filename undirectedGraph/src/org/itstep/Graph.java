@@ -25,6 +25,27 @@ public class Graph {
         return false;
     }
 
+    public boolean addEdge(int start, int finish, int weight) {
+        if (start < size && finish < size && start > -1 && finish > -1) {
+            adjMatrix[start][finish] = adjMatrix[finish][start] = weight;
+            return true;
+        }
+        return false;
+    }
+
+    public int[] getMinPaths(int start){
+        int[] distance = new int[size];
+        for (int i = 0; i < size; i++) {
+            distance[i] = Integer.MAX_VALUE;
+        }
+        distance[start] = 0;
+        //обойти смежные
+        //если не аощена - анализ пути
+        //пометить посещение
+        //найти минимальное
+        return distance;
+    }
+
     public int getAbjVertex(int start) {
         if (start > -1 && start < size) {
             for (int i = 0; i < size; i++) {
