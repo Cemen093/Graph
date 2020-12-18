@@ -33,16 +33,42 @@ public class Graph {
         return false;
     }
 
-    public int[] getMinPaths(int start){
+    public int[] getMinPaths(int start) {
         int[] distance = new int[size];
         for (int i = 0; i < size; i++) {
             distance[i] = Integer.MAX_VALUE;
         }
         distance[start] = 0;
-        //обойти смежные
-        //если не аощена - анализ пути
-        //пометить посещение
-        //найти минимальное
+
+        for (int j = 0; j < size; j++) {
+
+            //обойти смежные
+            for (int i = 0; i < size; i++) {
+                if (adjMatrix[start][i] != 0 && !vertices[i].isVisited()) {
+                    //если не посещена - анализ пути
+                    if (distance[i] > adjMatrix[start][i] + distance[start]) {
+                        distance[i] = adjMatrix[start][i] + distance[start];
+                    }
+                }
+            }
+
+            //пометить посещение
+            vertices[start].setVisited(true);
+            //найти минимальное
+            int min = Integer.MAX_VALUE;
+            int indexMin = 0;
+            for (int i = 0; i < size; i++) {
+                if (adjMatrix[start][i] != 0 && !vertices[i].isVisited() && adjMatrix[start][i] < min) {
+                    min = adjMatrix[start][i];
+                    indexMin = i;
+                }
+            }
+
+            start = indexMin;
+            //перейти в min
+        }
+
+
         return distance;
     }
 
@@ -101,6 +127,20 @@ public class Graph {
     public void falseVisited() {
         for (int i = 0; i < size; i++) {
             vertices[i].setVisited(false);
+        }
+    }
+
+    public void addArc(int start, int finish){
+        adjMatrix[start][finish] = 1;
+    }
+
+    public void topologySort(int start){
+        System.out.println(start);
+        vertices[start].setVisited(true);
+        int end;
+        while ((end = getAbjVertex(start)) != -1){
+            topologySort(end);
+            //добатить код тут
         }
     }
 }
