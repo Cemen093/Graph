@@ -1,4 +1,4 @@
-package org.itstep;
+package org.itstep.undirectedGraph;
 
 
 public class Main {

@@ -1,4 +1,4 @@
-package org.itstep;
+package org.itstep.undirectedGraph;
 
 import java.util.ArrayDeque;
 import java.util.Queue;
@@ -29,7 +29,6 @@ public class Graph {
         if (start > -1 && start < size) {
             for (int i = 0; i < size; i++) {
                 if (adjMatrix[start][i] == 1 && !vertices[i].isVisited()) {
-                    //vertices[i].setVisited(true);//по моему это строка лишняя, мы в методе BreadthFirstSearch тоже ставим true
                     return i;
                 }
             }
@@ -62,7 +61,7 @@ public class Graph {
         System.out.println(current + " " + vertices[current].getLabel());
         vertices[current].setVisited(true);
 
-        //Составляем очередь вершин которых мы видим и отмечаем из как посещенные
+        //Составляем очередь вершин которых мы видим и отмечаем их как посещенные
         Queue<Integer> queue = new ArrayDeque<>();
         int num;
         while ((num = getAbjVertex(current)) != -1) {
@@ -70,7 +69,7 @@ public class Graph {
             vertices[num].setVisited(true);
         }
 
-        //рекурсивный вызов для тех вершин которые мы видим от меньшей к мольшей
+        //рекурсивный вызов для тех вершин которые мы видим от меньшей к большей
         while (!queue.isEmpty()) {
             searchDepth(queue.poll());
 
