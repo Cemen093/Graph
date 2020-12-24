@@ -20,8 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="de0ab0fd-9090-4cd8-9a85-83919c1b6c70" name="Default Changelist" comment="Ready">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/itstep/directedGraph/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/itstep/directedGraph/Graph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/itstep/directedGraph/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/itstep/directedGraph/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +39,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
@@ -51,6 +53,8 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -101,6 +105,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.Main (1)" />
@@ -122,6 +137,8 @@
       <updated>1607963809329</updated>
       <workItem from="1607963810729" duration="8677000" />
       <workItem from="1608778095629" duration="14557000" />
+      <workItem from="1608818873395" duration="209000" />
+      <workItem from="1608819212120" duration="379000" />
     </task>
     <task id="LOCAL-00001" summary="Ready">
       <created>1607972442486</created>
@@ -151,7 +168,21 @@
       <option name="project" value="LOCAL" />
       <updated>1608818617044</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Ready">
+      <created>1608818943857</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1608818943858</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Ready">
+      <created>1608819020474</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1608819020474</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,16 +203,5 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Ready" />
     <option name="LAST_COMMIT_MESSAGE" value="Ready" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/org/itstep/directedGraph/Graph.java</url>
-          <line>138</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

@@ -37,31 +37,11 @@ public class Graph {
         return -1;
     }
 
-    public void setFalseVisitedForAllVertex() {
+    private void setFalseVisitedForAllVertex() {
         for (int i = 0; i < size; i++) {
             vertices[i].setVisited(false);
         }
     }
-
-    /*public void searchWidth(int start) {
-        System.out.println(start + " " + vertices[start].getLabel());
-        vertices[start].setVisited(true);
-
-        Queue<Integer> queue = new ArrayDeque<>();
-        queue.add(start);
-
-        while (!queue.isEmpty()) {
-            int tmp = queue.poll();
-            int num;
-            while ((num = getIndexFirstNotVisitedVertexOrMinusOneIfNot(tmp)) != -1) {
-                System.out.println(start + " " + vertices[num].getLabel());
-                vertices[num].setVisited(true);
-                queue.add(num);
-            }
-        }
-
-        falseVisited();
-    }*/
 
     public void searchDepth(int start) {
         //Предусмотреть возможость обхода графа в глубину
@@ -110,7 +90,7 @@ public class Graph {
 
         setFalseVisitedForAllVertex();
         Stack<Vertex> stack = new Stack<>();
-                topologicalSortQWE(start, stack);
+                makeStackForTopologicalSort(start, stack);
         for (int i = 0; i < size; i++) {
             vertices[i] = stack.pop();
         }
@@ -122,7 +102,7 @@ public class Graph {
     }
 
 
-    private void topologicalSortQWE(int current, Stack<Vertex> stack) {
+    private void makeStackForTopologicalSort(int current, Stack<Vertex> stack) {
         if (current >= MAX_SIZE || current < 0){
             throw new RuntimeException("Выход за пределы массива Vertex");
         }
@@ -137,7 +117,7 @@ public class Graph {
 
         //рекурсивный вызов для тех вершин которые мы видим от меньшей к большей
         while (!queue.isEmpty()) {
-            topologicalSortQWE(queue.poll(), stack);
+            makeStackForTopologicalSort(queue.poll(), stack);
         }
         stack.push(vertices[current]);
     }
