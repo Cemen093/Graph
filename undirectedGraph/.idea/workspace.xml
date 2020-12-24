@@ -20,15 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="de0ab0fd-9090-4cd8-9a85-83919c1b6c70" name="Default Changelist" comment="Ready">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hw15.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/itstep/directedGraph/Graph.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/itstep/directedGraph/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/itstep/directedGraph/Vertex.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/itstep/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/itstep/undirectedGraph/Graph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/itstep/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/itstep/undirectedGraph/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/itstep/Vertex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/itstep/undirectedGraph/Vertex.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,7 +133,7 @@
       <option name="presentableId" value="Default" />
       <updated>1607963809329</updated>
       <workItem from="1607963810729" duration="8677000" />
-      <workItem from="1608778095629" duration="13554000" />
+      <workItem from="1608778095629" duration="14243000" />
     </task>
     <task id="LOCAL-00001" summary="Ready">
       <created>1607972442486</created>
@@ -150,7 +142,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607972442486</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Ready">
+      <created>1608817959943</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1608817959943</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
